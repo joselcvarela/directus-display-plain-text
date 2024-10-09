@@ -1,0 +1,46 @@
+{
+  "name": "directus-display-plain-text",
+  "description": "Display plain text",
+  "icon": "extension",
+  "version": "1.0.0",
+  "keywords": [
+    "directus",
+    "directus-extension",
+    "directus-extension-display",
+    "plain-text",
+    "strip",
+    "html"
+  ],
+  "author": {
+    "name": "José Varela",
+    "url": "www.joselcvarela.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joselcvarela/directus-display-plain-text"
+  },
+  "bugs": {
+    "url": "https://github.com/joselcvarela/directus-display-plain-text/issues"
+  },
+  "license": "GPL-3.0-only",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "directus:extension": {
+    "type": "display",
+    "path": "dist/index.js",
+    "source": "src/index.ts",
+    "host": "^10.10.0"
+  },
+  "scripts": {
+    "build": "directus-extension build",
+    "dev": "directus-extension build -w --no-minify",
+    "link": "directus-extension link"
+  },
+  "devDependencies": {
+    "@directus/extensions-sdk": "12.1.0",
+    "typescript": "^5.6.3",
+    "vue": "^3.5.11"
+  }
+}
